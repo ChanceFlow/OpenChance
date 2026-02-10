@@ -23,9 +23,8 @@ async def main() -> None:
     # 加载环境变量
     load_dotenv()
 
-    # 设置日志 (loguru)
-    log_dir = project_root / "logs"
-    setup_logging(log_file=log_dir / "discord.log")
+    # 设置日志 (loguru) — 每次启动生成新日志文件
+    setup_logging(app_name="discord")
 
     # 加载配置
     try:
