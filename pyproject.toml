@@ -1,0 +1,11 @@
+[project]
+name = "openchance"
+version = "0.1.0"
+description = "Discord 私人助理机器人"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "discord-py>=2.6.4",
+    "loguru>=0.7.3",
+    "python-dotenv>=1.0.1",
+]
